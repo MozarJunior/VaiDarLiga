@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ url('assets/css/welcome.css') }}">
 @endsection
 
-@section('title', 'Cadastro de Jogos')
+@section('title', 'Atualização de Jogos')
 @php
     $page = 'jogos';
 @endphp

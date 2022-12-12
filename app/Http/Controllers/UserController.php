@@ -27,7 +27,7 @@ class UserController extends Controller
         $usuario->password = Hash::make($request->password);
         $usuario->save();
 
-        return back()->with('cadastro', 'Cadastro realizado com sucesso, agora faça o login para continuar');
+        return back()->with('cadastro', 'Cadastro realizado com sucesso');
     }
 
     public function show()

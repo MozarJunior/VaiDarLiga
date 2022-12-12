@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ url('assets/css/welcome.css') }}">
 @endsection
 
-@section('title', 'Login de Administrador')
+@section('title', 'Login do Administrador')
 
 @php
     $page = 'admin';

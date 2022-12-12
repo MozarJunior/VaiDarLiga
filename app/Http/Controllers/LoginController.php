@@ -53,21 +53,4 @@ class LoginController extends Controller
         Auth::logout();
         return redirect()->route('welcome');
     }
-
-    public function login_admin(Request $request)
-    {
-        $credentials = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
-        ]);
-        
-        if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
-            
-            // return redirect()->back();
-            return redirect()->route('index.admin');
-        }
-
-        return back()->withErrors(['login' => 'Email ou senha incorretos.']);
-    }
 }

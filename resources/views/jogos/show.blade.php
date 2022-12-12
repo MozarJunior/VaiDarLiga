@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <p class="card-text">Quantidade de Apostas: {{ $numApostas }}</p>
-                    <p class="card-text">{{ date('d/m/Y', strtotime($jogo->created_at)) }}</p>
+                    <p class="card-text">Data de Criação : {{ date('d/m/Y', strtotime($jogo->created_at)) }}</p>
                     <form class="buttons" action="{{ route('delete.jogos', $jogo->id) }}" method="POST">
                         @method('DELETE')
                         @csrf

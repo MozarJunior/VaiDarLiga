@@ -37,6 +37,20 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Cadastrar Usuário</button>
             </form>
+            @if ($errors->first('cadastro'))
+                <div class="alert alert-danger alert-dismissible fade show mt-3" role="alert">
+                    {{ $errors->first('cadastro') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                        aria-label="Close"></button>
+                </div>
+            @endif
+            @if (session('cadastro'))
+                <div class="alert alert-success alert-dismissible fade show mt-3" role="alert">
+                    {{ session('cadastro') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                        aria-label="Close"></button>
+                </div>
+            @endif
         </div>
     </div>
 </div>
