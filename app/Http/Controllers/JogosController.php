@@ -26,7 +26,8 @@ class JogosController extends Controller
         return back()->with('cadastro', 'Cadastro realizado com sucesso');
     }
 
-    public function update(Request $request, $id){
+    public function update(Request $request, $id)
+    {
         if(!$jogo = Jogo::find($id))
             return redirect()->route('show.jogos');
         

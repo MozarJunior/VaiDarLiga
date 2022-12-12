@@ -12,7 +12,8 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function create(Request $request){
+    public function create(Request $request)
+    {
         $usuario = User::whereEmail($request->email)->first();
         if ($usuario)
             return back()->withErrors(["cadastro" => "E-mail já cadastrado!"]);
@@ -29,14 +30,16 @@ class UserController extends Controller
         return back()->with('cadastro', 'Cadastro realizado com sucesso, agora faça o login para continuar');
     }
 
-    public function show(){
+    public function show()
+    {
         $users = User::get();
         $apostas = Aposta::get();
 
         return view('users.show', compact('users', 'apostas'));
     }
 
-    public function delete($id){
+    public function delete($id)
+    {
         if(!$user = User::find($id))
             return redirect()->route('show.users');
         
@@ -45,7 +48,8 @@ class UserController extends Controller
         return redirect()->route('show.users');
     }
 
-    public function update(Request $request, $id){
+    public function update(Request $request, $id)
+    {
 
         if(!$user = User::find($id))
             return redirect()->route('show.users');

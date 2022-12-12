@@ -60,7 +60,8 @@ class AdminController extends Controller
         return view('admin.index');
     }
 
-    public function login_admin(){
+    public function login_admin()
+    {
         if(Auth::guard('admin')->check()){
             return redirect()->route('index.admin');
         }
@@ -68,19 +69,23 @@ class AdminController extends Controller
         return view('admin.login');
     }
     
-    public function update_user($id){
+    public function update_user($id)
+    {
         return view('users.update', compact('id'));
     }
 
-    public function update_jogos($id){
+    public function update_jogos($id)
+    {
         return view('jogos.update', compact('id'));
     }
 
-    public function create_jogos(){
+    public function create_jogos()
+    {
         return view('jogos.create');
     }
 
-    public function create_users(){
+    public function create_users()
+    {
         return view('users.create');
     }
     
