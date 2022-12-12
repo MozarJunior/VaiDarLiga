@@ -1,0 +1,90 @@
+html{
+    overflow-x: hidden;
+}
+
+#carouselExampleControls img {
+    height: 620px;
+    object-fit: cover;
+}
+
+.btn-search{
+    padding-right: 24px;
+}
+
+.drop-admin a{
+    margin: 0 10px;
+}
+
+.dropdown-item{
+    width: 87%;
+}
+
+.btn-primary{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #a2113c; 
+    --bs-btn-border-color: #a2113c; 
+    --bs-btn-hover-color: #fff; 
+    --bs-btn-hover-bg: #a2113c; 
+    --bs-btn-hover-border-color: #a2113c; 
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #a2113c; 
+    --bs-btn-active-border-color: #a2113c; 
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #a2113c;
+    --bs-btn-disabled-border-color: #a2113c;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.75rem;
+}
+
+.btn-primary,
+.btn-outline-success {
+    background-color: #a2113c;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-outline-success:hover{
+    background-color: #71102d;
+    border: none;
+    color: white;
+}
+
+#jogos {
+    background-image: url("../img/bg-1.jpg");
+}
+
+#jogos img {
+    border-radius: 45px;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+}
+
+#jogos .card {
+    width: 350px;
+    min-height: 160px;
+}
+
+#jogos .time {
+    width: auto;
+}
+
+.btn-apostar {
+    width: 250px;
+    height: 46px;
+    border-radius: 25px;
+    font-weight: 700;
+    border: unset;
+    line-height: 30px;
+    background-color: white;
+}
+
+#rodape {
+    height: 100px;
+}
